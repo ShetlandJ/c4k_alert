@@ -1,0 +1,19 @@
+{
+"manifest_version": 2,
+    "name": "c4k Alert",
+    "short_name": "c4ka",
+    "description": "Adding an alert to the ",
+    "author": "james@jastewart.co.uk",
+    "version": "1.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
